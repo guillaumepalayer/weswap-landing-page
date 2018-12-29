@@ -1,13 +1,9 @@
-# DASHKIT #
+# Weswap - A decentralized instant swapping tool for your cryptocurrency
 
-Dashkit Theme by Good Themes.
+Official website of weswap.io
 
-### Documentation ###
 
-* Development documentation is available at `src/getting-started.html` (or `dist/getting-started.html` once you've compiled), or visit http://dashkit.goodthemes.co/getting-started.html.
-* A full list components is available at `src/components.html` (or `dist/components.html` once you've compiled), or visit http://dashkit.goodthemes.co/components.html.
-
-### Getting Started ###
+### Getting Started
 
 The steps to compile and get started with development are covered in detail in documentation mentioned above, but the summary is:
 
@@ -17,4 +13,4 @@ The steps to compile and get started with development are covered in detail in d
 
 ### Support ###
 
-Good Themes is happy to provide support for issues. Shoot us an email at support@goodthemes.co and we'll get you squared away.
+team@weswap.io

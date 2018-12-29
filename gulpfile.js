@@ -37,7 +37,7 @@ const paths = {
       dir:    'dist'
     },
     libs:   {
-      dir:    'dist/assets/libs'
+      dir:    'assets/libs'
     }
   },
   src:    {
@@ -144,7 +144,7 @@ gulp.task('copy:all', function() {
     '!' + paths.src.css.dir, '!' + paths.src.css.files,
     '!' + paths.src.html.files,
     ])
-    .pipe(gulp.dest(paths.dist.base.dir))
+    .pipe(gulp.dest(paths.base.base.dir))
 });
 
 gulp.task('copy:libs', function() {
@@ -167,11 +167,11 @@ gulp.task('html', function() {
     .pipe(cached('assets'))
     .pipe(gulpif('*.js', uglify()))
     .pipe(gulpif('*.css', cssnano()))
-    .pipe(gulp.dest(paths.dist.base.dir))
+    .pipe(gulp.dest(paths.base.base.dir))
 });
 
 gulp.task('build', function(callback) {
-  runsequence(['clean:tmp', 'clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'], 'sass', 'html', 
+  runsequence(['clean:tmp', 'clean:packageLock', 'clean:dist', 'copy:all', 'copy:libs'], 'sass', 'html',
     callback);
 });
 
